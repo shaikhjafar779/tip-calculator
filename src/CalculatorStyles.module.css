@@ -7,6 +7,7 @@ body{
     color: #000;
     margin: 0 auto;
     height: 100vh;
+    background-color: #fff;
 }
 form{
     width: 100%;
@@ -27,7 +28,8 @@ form{
     gap: 20px;
     flex-direction: row;
     flex-wrap: nowrap;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     height: max-content;
 }
 .box{
@@ -91,14 +93,14 @@ button:disabled {
     opacity: 0.8;
   }
 .tipamount{
-    padding: 10px;
+    padding: 10px 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .tipamount span{
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
     white-space: nowrap;
 }
@@ -109,7 +111,7 @@ button:disabled {
     word-break: break-all;
 }
 .reset{
-    margin: 30px auto; 
+    margin: 10px auto; 
     text-align: center;
     display: block;
     position: relative;
@@ -128,4 +130,15 @@ button:disabled {
 }
 #custom{
     width: 31%;
+}
+@media screen and (max-width: 650px){
+    .container{
+        width: 90%;
+    }
+    .tip{
+        justify-content: space-around;
+    }
+    #custom,.tip button{
+        width: 45%; 
+    }
 }
